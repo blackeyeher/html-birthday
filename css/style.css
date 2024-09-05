@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start to allow content to grow down */
+    text-align: center;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: visible; /* Allow content overflow */
+}
+
+h1, h2 {
+    color: #ff6b6b;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button.btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 10px;
+}
+
+button.btn:hover {
+    background-color: #ff4e4e;
+}
+
+#love-counter, #random-message {
+    font-size: 1.4em;
+    color: #ff6b6b;
+    margin-top: 10px;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    margin-top: 40px;
+}
+
+.slideshow {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slideshow-controls {
+    margin-top: 10px;
+}
+
+.final-note {
+    margin-top: 50px;
+}
+
+.final-note h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.final-note p {
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .slideshow img {
+        width: 100%;
+    }
+}
